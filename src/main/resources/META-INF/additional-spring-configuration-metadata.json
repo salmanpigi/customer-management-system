@@ -1,0 +1,9 @@
+{
+  "properties": [
+    {
+      "name": "application.data-dir",
+      "type": "java.lang.String",
+      "description": "Description for application.data-dir."
+    }
+  ]
+}

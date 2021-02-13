@@ -1,0 +1,23 @@
+jwt.secret: javainuse
+application.data-dir: ${DATA_DIR:./inventory-image}
+server.port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${DB_HOST:localhost}:3306/db_account_system?serverTimezone=UTC
+    username: root
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create
+    generate-ddl: true
+    show-sql: true
+    properties.hibernate.dialect: org.hibernate.dialect.MySQL8Dialect
+  messages.basename: i18n/messages
+  servlet:
+    multipart:
+      max-file-size: 1MB
+      max-request-size: 1MB
+springdoc:
+  swagger-ui:
+    path: /swagger.html

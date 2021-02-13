@@ -1,0 +1,15 @@
+application.data-dir: C:\Users\Enigma-Camp\Pictures\inventory-image
+server.port: 8080
+spring:
+  datasource:
+    url: jdbc:h2:mem:inventory
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  h2.console.enabled: false
+  jpa.database-platform: org.hibernate.dialect.H2Dialect
+  messages.basename: i18n/messages
+  servlet:
+    multipart:
+      max-file-size: 1MB
+      max-request-size: 1MB
